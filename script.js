@@ -3,9 +3,6 @@ var dataURL = ''
 function generateImage() {
   var name = document.getElementById('name-input').value
   var canvas = document.createElement('canvas')
-  var text = document.getElementById('message-input').value
-  var text2 = document.getElementById('message-input2').value
-  var text3 = document.getElementById('message-input3').value
 
   canvas.width = 840
   canvas.height = 840
