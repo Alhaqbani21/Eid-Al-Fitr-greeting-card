@@ -4,8 +4,8 @@ function generateImage() {
   var name = document.getElementById('name-input').value;
   var canvas = document.createElement('canvas');
 
-  canvas.width = 1080;
-  canvas.height = 1920;
+  canvas.width = 840;
+  canvas.height = 840;
   var context1 = canvas.getContext('2d');
 
   var contexts = [context1];
@@ -30,9 +30,9 @@ function generateImage() {
       contexts[i].shadowBlur = 5;
       contexts[i].shadowColor = 'rgba(0, 0, 0, 0.9)';
     }
-    contexts[0].font = "60px '117-Barada-Reqa', 'Playfair Display', serif";
+    contexts[0].font = "35px '117-Barada-Reqa', 'Playfair Display', serif";
 
-    contexts[0].fillText(name, canvas.width / 2, canvas.height - 190, 550);
+    contexts[0].fillText(name, canvas.width / 2, canvas.height - 155, 550);
 
     dataURL = canvas.toDataURL();
     updateImage(dataURL);
