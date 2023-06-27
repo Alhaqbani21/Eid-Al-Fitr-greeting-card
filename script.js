@@ -32,7 +32,7 @@ function generateImage() {
     }
     contexts[0].font = "35px '117-Barada-Reqa', 'Playfair Display', serif";
 
-    contexts[0].fillText(name, canvas.width / 2, canvas.height - 155, 550);
+    contexts[0].fillText(name, canvas.width / 1.9, canvas.height - 155, 300);
 
     dataURL = canvas.toDataURL();
     updateImage(dataURL);
