@@ -4,8 +4,8 @@ function generateImage() {
   var name = document.getElementById('name-input').value;
   var canvas = document.createElement('canvas');
 
-  canvas.width = 1920;
-  canvas.height = 1080;
+  canvas.width = 1080;
+  canvas.height = 1920;
   var context1 = canvas.getContext('2d');
 
   var contexts = [context1];
